@@ -6,7 +6,8 @@ document.getElementById('fahrenheit').addEventListener('click', function(){
     if(celc >= -273){
         showingCelcious.innerText = celc;
         let far = ((celc*9)/5)+32;
-        showingFarhenheit.innerText = far;
+        let fahren = far.toFixed(2);
+        showingFarhenheit.innerText = fahren;
         let calv = (celc+273);
         showingCalvin.innerText = calv;
     }
